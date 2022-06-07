@@ -1,0 +1,54 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box; 
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $main-bg;
+}
+
+a, a:visited, a:hover {
+    text-decoration: none;
+}
+
+.btn-primary {
+    padding: 0.875rem 1.6875rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    background-color: $menu-btn;
+    font-weight: bold;
+    font-size: 1.1875rem;
+}
+
+.btn-secondary {
+    border: 0;
+    background: $slider-btn;
+    color: $slider-btn-text;
+    font-size: 1.166rem;
+    font-weight: bold;
+    border-radius: 26.66px;
+    padding: 13px 24px 13px 23px;
+    cursor: pointer;
+}
+
+//visibility
+.hide-for-mobile {
+    @include breakpoint-down(medium) {
+        display: none;
+    }
+}
+
+.hide-for-desktop {
+    @include breakpoint-up(large) {
+        display: none;
+    }
+}

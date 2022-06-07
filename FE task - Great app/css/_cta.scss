@@ -1,0 +1,51 @@
+.cta {
+    background-color: $cta-bg;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 31px 25.86% 28px;
+
+    &__data {
+        text-align: center;
+
+        h2 {
+            margin: 0;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 0 0 23px;
+        }
+
+        .btn-cta {
+            font-size: 12px;
+            font-weight: bold;
+            color: $cta-btn;
+            background-color: white;
+            padding: 21px 37px 23px;
+            border: none;
+            border-radius: 2.5px;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (min-width:1024px) {
+    .cta {
+        flex-direction: row;
+        padding: 20px 0 21px;
+
+        &__data {
+
+            h2 {
+                display: inline-block;
+                padding: 0;
+                font-size: 16px;
+            }
+
+            .btn-cta {
+                margin-left: 135px;
+            }
+        }
+    }
+}

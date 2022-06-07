@@ -1,0 +1,124 @@
+.work {
+
+    &__text {
+
+        text-align: center;
+
+        h1 {
+            margin: 0;
+            font-size: 22px;
+            font-weight: bold;
+            color: $work-heading;
+            padding: 0 91px 0 92px;
+            line-height: 1.65625rem;
+
+            span {
+                color: $work-span;
+            }
+        }
+
+        p {
+            margin: 0;
+            color: $work-p;
+            padding: 28px 46px 39px 47px;
+            font-size: 12px;
+            line-height: 1rem;
+        }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__portion {
+        text-align: center;
+        padding: 0 27.73% 0 28.53%;
+
+        &--image {
+            height: 49px;
+            width: 100%;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+
+        h2 {
+            margin: 16px 0 18px;
+            color: $portion-heading;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        p {
+            margin: 0 0 40px 0;
+            color: $portion-p;
+            font-size: 12px;
+        }
+
+        .bg-1 {
+            background: url("../images/megaphone-circle.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .bg-2 {
+            background: url("../images/search-circle.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .work {
+
+        &__text {
+
+            h1 {
+                font-size: 48px;
+            }
+
+            p {
+                font-size: 17px;
+                padding: 64px 25.0625% 82px 24.9375%;
+            }
+        }
+
+        &__content {
+            align-items: flex-start;
+            flex-direction: row;
+            padding: 0 20.125% 0 20.0625%;
+        }
+
+        &__portion {
+            padding: 0;
+
+            &--image {
+                height: 87px;
+            }
+
+            h2 {
+                font-size: 20px;
+                margin: 38px 0 22px;
+            }
+
+            p {
+                font-size: 16px;
+                margin: 0;
+                padding-bottom: 25px;
+            }
+        }
+    }
+
+    .work-separator {
+        margin: 0 156px 0 155px;
+    }
+}

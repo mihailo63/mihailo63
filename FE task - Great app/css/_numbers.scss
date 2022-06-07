@@ -1,0 +1,51 @@
+.numbers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: $numbers-bg;
+    padding: 67px 34.66% 68px;
+
+    &__data {
+        text-transform: uppercase;
+        &:not(:first-child){
+            padding-top: 50px;
+        }
+
+        h1 {
+            margin: 0;
+            font-weight: lighter;
+            font-size: 22px;
+        }
+
+        h2 {
+            margin: 0;
+            font-weight: lighter;
+            font-size: 10px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .numbers {
+        flex-direction: row;
+        padding: 108px 19.625% 109px;
+
+        &__data {
+
+            &:not(:first-child) {
+                padding-top: 0;
+                padding-left: 8.8125%;
+            }
+
+            h1 {
+                font-size: 34px;
+            }
+
+            h2 {
+                font-size: 12px;
+            }
+        }
+    }
+}
